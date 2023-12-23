@@ -1,0 +1,32 @@
+.room-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: var(--fsize-norm);
+  box-sizing: border-box;
+  border: var(--border);
+  width: 50vh;
+  height: 50vh;
+}
+
+.room-card a {
+  display: block;
+  margin: var(--fsize-norm) auto;
+  width: 80%;
+  height: max-content;
+}
+
+.room-card a img {
+  object-fit: cover;
+  border-radius: var(--fsize-norm);
+  width: 100%;
+}
+
+.room-card address p,
+.room-card address a {
+  display: block;
+  margin: var(--fsize-norm) auto;
+  width: max-content;
+  height: max-content;
+}

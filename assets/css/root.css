@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-fg: var(--black);
+    --color-bg: var(--white);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: var(--white);
+    --color-bg: var(--black);
+  }
+}
+
+:root {
+  --black: #171717;
+  --white: #fafafa;
+  --green: #22c55e;
+  --red:   #ef4444;
+
+  --border-color: #1f1f1f;
+
+  --fsize-norm: 14px;
+  --border: 2px solid var(--border-color);
+}
