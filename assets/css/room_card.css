@@ -30,3 +30,18 @@
   width: max-content;
   height: max-content;
 }
+
+/*
+  roo card template
+
+  <div class="room-card">
+    <a href="https://picsum.photos/" target="_blank">
+      <img src="https://picsum.photos/640/480">
+    </a>
+    <p></p>
+    <address>
+      <p></p>
+      <a href="tel:"></a>
+    </address>
+  </div>
+*/

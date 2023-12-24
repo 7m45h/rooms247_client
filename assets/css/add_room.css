@@ -1,0 +1,12 @@
+#add-room {
+  border: var(--border);
+  width: 50vh;
+  height: 50vh;
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+#add-room::backdrop {
+  opacity: 0.5;
+  background: var(--color-bg);
+}
