@@ -11,9 +11,9 @@ function list_newRoom(rooms) {
   rooms["room"].forEach((room) => {
     const card = document.createElement("div");
     card.classList.add("room-card");
-    card.innerHTML += `
+    card.innerHTML = `
       <a href="https://picsum.photos/" target="_blank">
-        <img src="https://picsum.photos/640/480">
+        <img src="https://picsum.photos/640/480?random=${Math.round(Math.random() * 10)}">
       </a>
       <p>${room["dist"]} Km</p>
       <address>
@@ -55,6 +55,7 @@ form.addEventListener("submit", async (event) => {
   const new_room = await response.json();
 
   dialog.close();
+  form.reset();
 
   list_newRoom(new_room);
 });

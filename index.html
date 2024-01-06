@@ -19,24 +19,19 @@
   <main>
     <button id="add-btn">+</button>
     <dialog id="add-room">
-      <button>x</button>
-      <form>
-        <input id="dist" name="dist" type="number" placeholder="distance" required></input>
-        <input id="addr" name="addr" type="text" placeholder="address" required></input>
-        <input id="tel" name="tel" type="tel" placeholder="telephone number" required></input>
-        <button type="submit">submit</button>
-      </form> 
+      <div>
+        <button>x</button>
+        <form>
+          <label for="dist">distance (in Km):</label>
+          <input id="dist" name="dist" type="number" placeholder="distance" required></input>
+          <label for="addr">address:</label>
+          <input id="addr" name="addr" type="text" placeholder="address" required></input>
+          <label for="tel">telephone number:</label>
+          <input id="tel" name="tel" type="tel" placeholder="telephone number" required></input>
+          <button type="submit">submit</button>
+        </form>
+      </div>
     </dialog>
-    <div class="room-card">
-      <a href="https://picsum.photos/" target="_blank">
-        <img src="https://picsum.photos/640/480">
-      </a>
-      <p>dist Km</p>
-      <address>
-        <p>address / to / the / room</p>
-        <a href="tel:+12345678">+123 456789</a>
-      </address>
-    </div>
   </main>
   </body>
 </html>
