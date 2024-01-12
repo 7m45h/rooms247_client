@@ -4,7 +4,9 @@ const dialog = document.querySelector("dialog");
 const form = document.querySelector("dialog form");
 const closeBtn = document.querySelector("dialog button");
 
-const api_url = "http://localhost:5000/room";
+const magic_number = 10000
+
+const api_url = "https://rooms245-api.onrender.com/room";
 
 // update room list
 function list_newRoom(rooms) {
@@ -13,7 +15,7 @@ function list_newRoom(rooms) {
     card.classList.add("room-card");
     card.innerHTML = `
       <a href="https://picsum.photos/" target="_blank">
-        <img src="https://picsum.photos/640/480?random=${Math.round(Math.random() * 10)}">
+        <img src="https://picsum.photos/640/480?random=${Math.round(Math.random() * magic_number)}">
       </a>
       <p>${room["dist"]} Km</p>
       <address>
@@ -44,7 +46,7 @@ form.addEventListener("submit", async (event) => {
     "dist": data.get("dist"),
     "addr": data.get("addr"),
     "tele": parseInt(data.get("tel")),
-    "del_key": Math.random()
+    "del_key": Math.round(Math.random() * magic_number)
   };
 
   const response = await fetch(api_url, {
