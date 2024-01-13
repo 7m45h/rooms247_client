@@ -45,7 +45,7 @@ form.addEventListener("submit", async (event) => {
     "id": Date.now(),
     "dist": data.get("dist"),
     "addr": data.get("addr"),
-    "tele": parseInt(data.get("tel")),
+    "tele": data.get("tel"),
     "del_key": Math.round(Math.random() * magic_number)
   };
 
