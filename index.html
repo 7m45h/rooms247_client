@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/room_card.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/add_btn.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/add_room.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/remove_room.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
     <script src="./assets/scripts/room_keeper.js" defer></script>
   </head>
@@ -30,6 +31,20 @@
             <input id="tel" name="tel" type="tel" placeholder="telephone number" required></input>
             <button class="form-submit" type="submit">submit</button>
             <p id="delkey-holder">delete key: </p>
+          </fieldset>
+        </form>
+      </div>
+    </dialog>
+    <dialog id="remove-room">
+      <div>
+        <button>x</button>
+        <form>
+          <fieldset>
+            <legend>remove room</legend>
+            <p id="room-id">room id: </p>
+            <input id="del-key" name="del-key" type="number" placeholder="delete key" required></input>
+            <button class="form-submit" type="submit">remove</button>
+            <p id="del-status">status: None</p>
           </fieldset>
         </form>
       </div>

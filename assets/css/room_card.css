@@ -12,7 +12,7 @@
 .room-card > button {
   grid-row: 1 / 2;
   grid-column: 10 / 11;
-  border: none;
+  border: var(--border);
   aspect-ratio: 1 / 1;
   background: var(--red);
 }
