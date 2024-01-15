@@ -32,31 +32,4 @@
 #add-room div form {
   grid-row: 2 / 11;
   grid-column: 1 / 11;
-  font-size: var(--fsize-head);
-}
-
-#add-room div form fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-}
-
-#add-room div form fieldset input {
-  box-sizing: border-box;
-  margin: 1em 0px;
-  width: 80%;
-  height: 1.5em;
-}
-
-#add-room div form fieldset button {
-  box-sizing: border-box;
-  margin: 1em 0px;
-  border: var(--border);
-  padding: 0.5em 0px;
-  width: 80%;
-  background: var(--green);
 }
