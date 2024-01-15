@@ -1,8 +1,9 @@
 const main = document.querySelector("main");
 const addBtn = document.getElementById("add-btn");
-const dialog = document.querySelector("dialog");
-const form = document.querySelector("dialog form");
-const closeBtn = document.querySelector("dialog button");
+const dialog = document.querySelector("#add-room");
+const form = document.querySelector("#add-room form");
+const delKeyHolder = document.querySelector("#add-room #delkey-holder");
+const closeBtn = document.querySelector("#add-room button");
 
 const magic_number = 10000
 
@@ -35,6 +36,7 @@ addBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   dialog.close();
+  delKeyHolder.textContent = "delete key: ";
 });
 
 // handle form
@@ -57,8 +59,9 @@ form.addEventListener("submit", async (event) => {
   });
   const new_room = await response.json();
 
-  dialog.close();
   form.reset();
+  delKeyHolder.textContent = "delete key: ";
+  delKeyHolder.textContent += data["del_key"];
 
   list_newRoom(new_room);
 });
