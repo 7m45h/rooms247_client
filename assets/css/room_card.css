@@ -1,47 +1,53 @@
 .room-card {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  margin: var(--fsize-norm);
+  border: var(--border);
+  width: max-content;
+  height: max-content;
+  padding: var(--fsize-norm);
+}
+
+.room-card > button {
+  grid-row: 1 / 2;
+  grid-column: 10 / 11;
+  border: none;
+  aspect-ratio: 1 / 1;
+  background: var(--red);
+}
+
+.room-card div {
+  grid-row: 2 / 11;
+  grid-column: 1 / 11;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin: var(--fsize-norm);
-  box-sizing: border-box;
+  margin-top: 1em;
   border: var(--border);
-  width: 50vh;
-  height: 50vh;
-}
-
-.room-card a {
-  display: block;
-  margin: var(--fsize-norm) auto;
-  width: 80%;
-  height: max-content;
-}
-
-.room-card a img {
-  object-fit: cover;
-  border-radius: var(--fsize-norm);
-  width: 100%;
-}
-
-.room-card address p,
-.room-card address a {
-  display: block;
-  margin: var(--fsize-norm) auto;
+  border-color: var(--color-fg);
+  padding: var(--fsize-norm);
   width: max-content;
   height: max-content;
 }
 
+.room-card img {
+  width: 256px;
+  height: 144px;
+}
+
 /*
-  roo card template
+  room card template
 
   <div class="room-card">
-    <a href="https://picsum.photos/" target="_blank">
-      <img src="https://picsum.photos/640/480">
-    </a>
-    <p></p>
-    <address>
+    <button>x</button>
+    <div>
+      <a href="https://picsum.photos/" target="_blank">
+        <img src="https://picsum.photos/256/144">
+      </a>
       <p></p>
+      <address></address>
       <a href="tel:"></a>
-    </address>
+    </div>
   </div>
 */

@@ -14,14 +14,15 @@ function list_newRoom(rooms) {
     const card = document.createElement("div");
     card.classList.add("room-card");
     card.innerHTML = `
-      <a href="https://picsum.photos/" target="_blank">
-        <img src="https://picsum.photos/640/480?random=${Math.round(Math.random() * magic_number)}">
-      </a>
-      <p>${room["dist"]} Km</p>
-      <address>
-        <p>${room["addr"]}</p>
+      <button>x</button>
+      <div>
+        <a href="https://picsum.photos/" target="_blank">
+          <img src="https://picsum.photos/256/144?random=${Math.round(Math.random() * magic_number)}">
+        </a>
+        <p>${room["dist"]} Km</p>
+        <address>${room["addr"]}</address>
         <a href="tel:${room["tele"]}">${room["tele"]}</a>
-      </address>
+      </div>
     `
     main.appendChild(card);
   });
