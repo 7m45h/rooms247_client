@@ -31,3 +31,19 @@
 .text-button:active {
   color: var(--color-bg);
 }
+
+.button-positive {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.button-negative {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.button-positive:active,
+.button-negative:active {
+  background: unset;
+  color: var(--color-fg);
+}

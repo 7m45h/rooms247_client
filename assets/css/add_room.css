@@ -1,0 +1,19 @@
+#add-room-btn {
+  position: relative;
+  top: calc(100vh - var(--footer-height) - 3em);
+  left: calc(100vw - 3em);
+  border: var(--border);
+  border-color: var(--color-ac);
+  border-radius: 50%;
+  width: 2em;
+  aspect-ratio: 1 / 1;
+  background: var(--color-ac);
+  font-weight: bold;
+  font-size: var(--fsize-head);
+  color: var(--color-bg);
+}
+
+#add-room-btn:active {
+  background: var(--color-bg);
+  color: var(--color-ac);
+}

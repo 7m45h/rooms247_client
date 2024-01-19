@@ -1,5 +1,6 @@
 :root {
   --black:  #282828;
+  --green:  #b8bb26;
   --red:    #fb4934;
   --white:  #ebdbb2;
   --yellow: #fabd2f;
@@ -7,6 +8,7 @@
   --color-ac:   var(--yellow);
   --color-bg:   var(--black);
   --color-bg-a: #3c3836;
+  --color-bg-b: #504945;
   --color-fg:   var(--white);
 
   --fsize-norm: 14px;

@@ -14,12 +14,28 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/button.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/room_card.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/add_room.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
     <script src="./assets/scripts/nav_main.js" async defer></script>
+    <script src="./assets/scripts/add_room.js" async defer></script>
   </head>
   <body>
+    <dialog id="add-room-dialog">
+      <form>
+        <fieldset>
+          <legend>add new room</legend>
+          <input id="ar-dist" type="number" name="dist" placeholder="distance in Km" required></input>
+          <input id="ar-addr" type="text" name="addr" placeholder="address" required></input>
+          <input id="ar-tele" type="tel" name="tele" placeholder="telephone number" required></input>
+          <button id="ar-submit" class="button-positive" type="button">add</button>
+          <button id="ar-cancel" class="button-negative" type="reset">cancel</button>
+        </fieldset>
+      </form>
+    </dialog>
     <main>
-      <section id="home"></section>
+      <section id="home">
+        <button id="add-room-btn">+</button>
+      </section>
       <section id="about"></section>
     </main>
     <footer>
