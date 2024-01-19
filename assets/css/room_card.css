@@ -28,7 +28,7 @@
   room card template
 
   <div class="room-card">
-    <div class="rc-remove-btn text-button">remove</div>
+    <div class="rc-remove-btn text-button" onclick="openRemoveRoomDialog()">remove</div>
     <img class="rc-img" src="https://picsum.photos/256/144" loading="lazy">
     <div class="rc-dist rc-info">
       <p>distance: </p>

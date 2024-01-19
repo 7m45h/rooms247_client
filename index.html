@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
     <script src="./assets/scripts/nav_main.js" async defer></script>
     <script src="./assets/scripts/add_room.js" async defer></script>
+    <script src="./assets/scripts/remove_room.js" async defer></script>
   </head>
   <body>
     <dialog id="add-room-dialog">
@@ -29,6 +30,15 @@
           <input id="ar-tele" type="tel" name="tele" placeholder="telephone number" required></input>
           <button id="ar-submit" class="button-positive" type="button">add</button>
           <button id="ar-cancel" class="button-negative" type="reset">cancel</button>
+        </fieldset>
+      </form>
+    </dialog>
+    <dialog id="remove-room-dialog">
+      <form>
+        <fieldset>
+          <legend>remove room</legend>
+          <button id="rr-remove" class="button-positive" type="button">remove</button>
+          <button id="rr-cancel" class="button-negative" type="button">cancel</button>
         </fieldset>
       </form>
     </dialog>
