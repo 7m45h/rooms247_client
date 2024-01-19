@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-top: var(--border);
+  width: 100%;
+  height: var(--footer-height);
+}
+
+#anc-logo {
+  width: var(--fsize-head);
+  aspect-ratio: 1 / 1;
+  background: url("../images/logo_lof.svg");
+  background-size: contain;
+}
+
+#anc-logo:hover {
+  background: url("../images/logo_lon.svg");
+  background-size: contain;
+}
+
+#nav-main {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}

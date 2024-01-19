@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-bg);
+  font-family: monospace;
+  font-weight: bold;
+  font-size: var(--fsize-norm);
+  color: var(--color-fg);
+}
+
+main {
+  width: 100%;
+  height: calc(100% - var(--footer-height));
+}
+
+a {
+  color: var(--color-ac);
+}

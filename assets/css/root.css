@@ -1,0 +1,18 @@
+:root {
+  --black:  #282828;
+  --red:    #fb4934;
+  --white:  #ebdbb2;
+  --yellow: #fabd2f;
+
+  --color-ac: var(--yellow);
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+
+  --fsize-norm: 14px;
+  --fsize-head: calc(var(--fsize-norm) * 2);
+
+  --border: 2px solid var(--white);
+  --border-curve: 6px;
+
+  --footer-height: calc(var(--fsize-norm) * 5);
+}
