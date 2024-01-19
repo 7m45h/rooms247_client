@@ -13,6 +13,6 @@
 }
 
 .button:hover {
-  background: var(--color-bg);
+  background: unset;
   color: var(--color-fg);
 }

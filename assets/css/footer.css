@@ -6,6 +6,7 @@ footer {
   border-top: var(--border);
   width: 100%;
   height: var(--footer-height);
+  background: var(--color-bg-a);
 }
 
 #anc-logo {

@@ -4,9 +4,10 @@
   --white:  #ebdbb2;
   --yellow: #fabd2f;
 
-  --color-ac: var(--yellow);
-  --color-bg: var(--black);
-  --color-fg: var(--white);
+  --color-ac:   var(--yellow);
+  --color-bg:   var(--black);
+  --color-bg-a: #3c3836;
+  --color-fg:   var(--white);
 
   --fsize-norm: 14px;
   --fsize-head: calc(var(--fsize-norm) * 2);
