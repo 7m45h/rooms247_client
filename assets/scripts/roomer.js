@@ -29,7 +29,7 @@ function appendRoomToHome(rooms) {
       room_card.innerHTML = `<div class="rc-remove-btn text-button" onclick="openRemoveRoomDialog(${room["room_id"]})">remove</div>`
     }
     room_card.innerHTML += `
-      <img class="rc-img" src="https://picsum.photos/256/144" loading="lazy">
+      <img class="rc-img" src="https://picsum.photos/256/144?random=${Math.round(Math.random() * 1000)}" loading="lazy">
       <div class="rc-dist rc-info">
         <p>distance: </p>
         <p>${room["dist"]} Km</p>
