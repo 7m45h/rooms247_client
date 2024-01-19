@@ -17,6 +17,10 @@ main {
   height: calc(100% - var(--footer-height));
 }
 
+p {
+  margin: 0px;
+}
+
 a {
   color: var(--color-ac);
 }

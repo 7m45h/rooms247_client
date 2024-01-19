@@ -13,7 +13,7 @@
   --fsize-head: calc(var(--fsize-norm) * 2);
 
   --border: 2px solid var(--white);
-  --border-curve: 6px;
+  --border-curve: 5px;
 
   --footer-height: calc(var(--fsize-norm) * 5);
 }
