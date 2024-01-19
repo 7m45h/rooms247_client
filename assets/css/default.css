@@ -58,9 +58,12 @@ legend {
 }
 
 fieldset > input {
+  border: var(--border);
   padding: 0.5em;
   width: 20vw;
+  background: var(--color-fg);
   font-size: var(--fsize-norm);
+  color: var(--color-bg);
 }
 
 fieldset > button {
