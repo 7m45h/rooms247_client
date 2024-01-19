@@ -1,5 +1,5 @@
 #add-room-btn {
-  position: relative;
+  position: fixed;
   top: calc(100vh - var(--footer-height) - 3em);
   left: calc(100vw - 3em);
   border: var(--border);
