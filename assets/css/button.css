@@ -6,13 +6,18 @@
   border-color: var(--color-ac);
   border-radius: var(--border-curve);
   padding: 0.5em;
-  background: var(--color-ac);
   cursor: pointer;
   text-decoration: none;
+  color: var(--color-fg);
+}
+
+.button:hover,
+.button-selected {
+  background: var(--color-ac);
   color: var(--color-bg);
 }
 
-.button:hover {
+.button:active {
   background: unset;
   color: var(--color-fg);
 }
