@@ -1,0 +1,49 @@
+.button {
+  display: inline;
+  box-sizing: border-box;
+  margin: 1em;
+  border: var(--border);
+  border-color: var(--color-ac);
+  border-radius: var(--border-curve);
+  padding: 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-fg);
+}
+
+.button:hover,
+.button-selected {
+  background: var(--color-ac);
+  color: var(--color-bg);
+}
+
+.button:active {
+  background: unset;
+  color: var(--color-fg);
+}
+
+.text-button {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-ac);
+}
+
+.text-button:active {
+  color: var(--color-bg);
+}
+
+.button-positive {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.button-negative {
+  border-color: var(--red);
+  background: var(--red);
+}
+
+.button-positive:active,
+.button-negative:active {
+  background: unset;
+  color: var(--color-fg);
+}

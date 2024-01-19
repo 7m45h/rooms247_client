@@ -4,51 +4,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rooms247</title>
-    <meta name="description" content="find rooms">
-    <meta name="keywords" content="rooms">
-    <link rel="icon" type="image/png" href="./assets/images/favicon.gif">
+    <meta name="author" content="">
+    <meta name="description" content="get post information about available boarding places">
+    <meta name="keywords" content="boarding, info">
+    <link rel="icon" type="image/gif" href="./assets/images/favicon.gif">
     <link rel="stylesheet" type="text/css" href="./assets/css/root.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/default.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/button.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/room_card.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/add_btn.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/add_room.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/remove_room.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
-    <script src="./assets/scripts/room_keeper.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <script src="./assets/scripts/roomer.js" defer></script>
+    <script src="./assets/scripts/nav_main.js" defer></script>
   </head>
   <body>
-  <main>
-    <button id="add-btn">+</button>
-    <dialog id="add-room">
-      <div>
-        <button>x</button>
-        <form>
-          <fieldset>
-            <legend>add new room</legend>
-            <input id="dist" name="dist" type="number" placeholder="distance in Km" required></input>
-            <input id="addr" name="addr" type="text" placeholder="address" required></input>
-            <input id="tel" name="tel" type="tel" placeholder="telephone number" required></input>
-            <button class="form-submit" type="submit">submit</button>
-            <p id="delkey-holder">delete key: </p>
-          </fieldset>
-        </form>
-      </div>
+    <dialog id="add-room-dialog">
+      <form>
+        <fieldset>
+          <legend>add new room</legend>
+          <input id="ar-dist" type="number" name="dist" placeholder="distance in Km" required></input>
+          <input id="ar-addr" type="text" name="addr" placeholder="address" required></input>
+          <input id="ar-tele" type="tel" name="tele" placeholder="telephone number" required></input>
+          <button id="ar-submit" class="button-positive" type="button">add</button>
+          <button id="ar-cancel" class="button-negative" type="reset">cancel</button>
+        </fieldset>
+      </form>
     </dialog>
-    <dialog id="remove-room">
-      <div>
-        <button>x</button>
-        <form>
-          <fieldset>
-            <legend>remove room</legend>
-            <p id="room-id">room id: </p>
-            <input id="del-key" name="del-key" type="number" placeholder="delete key" required></input>
-            <button class="form-submit" type="submit">remove</button>
-            <p id="del-status">status: None</p>
-          </fieldset>
-        </form>
-      </div>
+    <dialog id="remove-room-dialog">
+      <form>
+        <fieldset>
+          <legend>remove room</legend>
+          <button id="rr-remove" class="button-positive" type="button">remove</button>
+          <button id="rr-cancel" class="button-negative" type="button">cancel</button>
+        </fieldset>
+      </form>
     </dialog>
-  </main>
+    <main>
+      <section id="home">
+        <button id="add-room-btn">+</button>
+      </section>
+      <section id="about">
+        <dl>
+          <dt>Step 01:</dt>
+          <dd>Click big round add button in screen right lower corner</dd>
+          <dt>Step 02:</dt>
+          <dd>Fill required details and press "add"</dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <a id="anc-logo" href="./"></a>
+      <nav id="nav-main">
+        <div id="btn-home" class="button button-selected">home</div>
+        <div id="btn-about" class="button">about</div>
+      </nav>
+      <a id="anc-repo" href="https://github.com/7m45h/rooms247_client" target="_blank">github</a>
+    </footer>
   </body>
 </html>

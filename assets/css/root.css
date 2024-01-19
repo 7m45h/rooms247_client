@@ -1,26 +1,21 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-fg: var(--black);
-    --color-bg: var(--white);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-fg: var(--white);
-    --color-bg: var(--black);
-  }
-}
-
 :root {
-  --black: #171717;
-  --white: #fafafa;
-  --green: #22c55e;
-  --red:   #ef4444;
+  --black:  #282828;
+  --green:  #b8bb26;
+  --red:    #fb4934;
+  --white:  #ebdbb2;
+  --yellow: #fabd2f;
 
-  --border-color: #1f1f1f;
+  --color-ac:   var(--yellow);
+  --color-bg:   var(--black);
+  --color-bg-a: #3c3836;
+  --color-bg-b: #504945;
+  --color-fg:   var(--white);
 
   --fsize-norm: 14px;
-  --fsize-head: 16px;
-  --border: 2px solid var(--border-color);
+  --fsize-head: calc(var(--fsize-norm) * 2);
+
+  --border: 2px solid var(--white);
+  --border-curve: 5px;
+
+  --footer-height: calc(var(--fsize-norm) * 5);
 }

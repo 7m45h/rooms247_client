@@ -1,0 +1,14 @@
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+#about dt {
+  margin-top: var(--fsize-norm);
+  font-size: var(--fsize-head);
+}

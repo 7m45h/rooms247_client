@@ -1,53 +1,50 @@
 .room-card {
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
   margin: var(--fsize-norm);
+  border-radius: var(--border-curve);
   border: var(--border);
-  width: max-content;
-  height: max-content;
-  padding: var(--fsize-norm);
-}
-
-.room-card > button {
-  grid-row: 1 / 2;
-  grid-column: 10 / 11;
-  border: var(--border);
-  aspect-ratio: 1 / 1;
-  background: var(--red);
-}
-
-.room-card div {
-  grid-row: 2 / 11;
-  grid-column: 1 / 11;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1em;
-  border: var(--border);
-  border-color: var(--color-fg);
   padding: var(--fsize-norm);
   width: max-content;
   height: max-content;
 }
 
-.room-card img {
+.rc-remove-btn {
+  margin-left: auto;
+  width: min-content;
+}
+
+.rc-img {
+  object-fit: cover;
+  border-radius: var(--border-curve);
   width: 256px;
   height: 144px;
 }
 
+.rc-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
 /*
   room card template
 
   <div class="room-card">
-    <button>x</button>
-    <div>
-      <a href="https://picsum.photos/" target="_blank">
-        <img src="https://picsum.photos/256/144">
-      </a>
-      <p></p>
-      <address></address>
-      <a href="tel:"></a>
+    <div class="rc-remove-btn text-button" onclick="openRemoveRoomDialog()">remove</div>
+    <img class="rc-img" src="https://picsum.photos/256/144" loading="lazy">
+    <div class="rc-dist rc-info">
+      <p>distance: </p>
+      <p>5 Km</p>
+    </div>
+    <div class="rc-address rc-info">
+      <p>address: </p>
+      <address>
+        No555,
+        foo road,
+        bar.
+      </address>
+    </div>
+    <div class="rc-telephone rc-info">
+      <p>telephone: </p>
+      <a href="tel:+55555555555" target="_blank">+55555555555</a>
     </div>
   </div>
 */
