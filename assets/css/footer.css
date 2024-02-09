@@ -14,11 +14,11 @@ footer {
   aspect-ratio: 1 / 1;
   background: url("../images/logo_lof.svg");
   background-size: contain;
-}
 
-#anc-logo:hover {
-  background: url("../images/logo_lon.svg");
-  background-size: contain;
+  &:hover {
+    background: url("../images/logo_lon.svg");
+    background-size: contain;
+  }
 }
 
 #nav-main {

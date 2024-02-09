@@ -34,47 +34,44 @@ dialog {
   border-radius: var(--border-curve);
   border-color: var(--color-bg-a);
   background: var(--color-bg);
-}
 
-dialog::backdrop {
-  background: #000000dd;
-  backdrop-filter: blur(4px);
+  &::backdrop {
+    background: #000000dd;
+    backdrop-filter: blur(4px);
+  }
 }
 
 form {
   width: 100%;
   height: 100%;
-}
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-  border: var(--border);
-  border-color: var(--color-fg);
-}
+  & > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    border-color: var(--color-fg);
 
-legend {
-  color: var(--color-fg);
-}
+    & legend {
+      color: var(--color-fg);
+    }
 
-fieldset > input {
-  border: var(--border);
-  padding: 0.5em;
-  width: 20vw;
-  background: var(--color-fg);
-  font-size: var(--fsize-norm);
-  color: var(--color-bg);
-}
+    & > input {
+      margin: 1em;
+      border: var(--border);
+      padding: 0.5em;
+      width: 20vw;
+      background: var(--color-fg);
+      font-size: var(--fsize-norm);
+      color: var(--color-bg);
+    }
 
-fieldset > button {
-  border: var(--border);
-  border-color: unset;
-  padding: 0.5em 0px;
-  font-weight: bold;
-  font-size: var(--fsize-norm);
-}
-
-fieldset > input,
-fieldset > button {
-  margin: 1em;
+    & > button {
+      margin: 1em;
+      border: var(--border);
+      border-color: unset;
+      padding: 0.5em 0px;
+      font-weight: bold;
+      font-size: var(--fsize-norm);
+    }
+  }
 }

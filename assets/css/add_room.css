@@ -11,9 +11,9 @@
   font-weight: bold;
   font-size: var(--fsize-head);
   color: var(--color-bg);
-}
 
-#add-room-btn:active {
-  background: var(--color-bg);
-  color: var(--color-ac);
+  &:active {
+    background: var(--color-bg);
+    color: var(--color-ac);
+  }
 }

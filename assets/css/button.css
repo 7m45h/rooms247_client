@@ -9,26 +9,30 @@
   cursor: pointer;
   text-decoration: none;
   color: var(--color-fg);
-}
 
-.button:hover,
-.button-selected {
-  background: var(--color-ac);
-  color: var(--color-bg);
-}
+  &:hover {
+    background: var(--color-ac);
+    color: var(--color-bg);
+  }
 
-.button:active {
-  background: unset;
-  color: var(--color-fg);
+  &:active {
+    background: unset;
+    color: var(--color-fg);
+  }
 }
 
 .text-button {
   cursor: pointer;
   text-decoration: underline;
   color: var(--color-ac);
+
+  .text-button:active {
+    color: var(--color-bg);
+  }
 }
 
-.text-button:active {
+.button-selected {
+  background: var(--color-ac);
   color: var(--color-bg);
 }
 
